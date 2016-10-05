@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/PurchaseOrders" elementFormDefault="qualified">     
+       <xs:element name="PurchaseOrders">
+              <xs:complexType>
+                     <xs:sequence>
+                            <xs:element name="PurchaseOrder" maxOccurs="unbounded">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="Address" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                               <xs:sequence>
+                                                                      <xs:element name="Name" type="xs:string"></xs:element>
+                                                                      <xs:element name="Street" type="xs:string"></xs:element>
+                                                                      <xs:element name="City" type="xs:string"></xs:element>
+                                                                      <xs:element name="State" type="xs:string"></xs:element>
+                                                                      <xs:element name="Zip" type="xs:int"></xs:element>
+                                                                      <xs:element name="Country" type="xs:string"></xs:element>
+                                                                  </xs:sequence>
+                                                               <xs:attribute name="Type" type="xs:string"></xs:attribute>
+                                                           </xs:complexType>
+                                                    </xs:element>
+                                                 <xs:element name="DeliveryNotes" type="xs:string"></xs:element>
+                                                 <xs:element name="Items">
+                                                        <xs:complexType>
+                                                               <xs:sequence>
+                                                                      <xs:element name="Item" maxOccurs="unbounded">
+                                                                             <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                           <xs:element name="ProductName" type="xs:string"></xs:element>
+                                                                                           <xs:element name="Quantity" type="xs:int"></xs:element>
+                                                                                           <xs:element name="USPrice" type="xs:double"></xs:element>
+                                                                                           <xs:element name="Comment" type="xs:string"></xs:element>
+                                                                                       </xs:sequence>
+                                                                                    <xs:attribute name="PartNumber" type="xs:string"></xs:attribute>
+                                                                                </xs:complexType>
+                                                                         </xs:element>
+                                                                  </xs:sequence>
+                                                           </xs:complexType>
+                                                    </xs:element>
+                                             </xs:sequence>
+                                          <xs:attribute name="PurchaseOrderNumber" type="xs:int"></xs:attribute>
+                                          <xs:attribute name="OrderDate" type="xs:date"></xs:attribute>
+                                      </xs:complexType>
+                               </xs:element>
+                            <xs:element name="aw:ADPurchaseOrder">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="aw:ShippingAddress">
+                                                        <xs:complexType>
+                                                               <xs:sequence>
+                                                                      <xs:element name="aw:Name" type="xs:string"></xs:element>
+                                                                      <xs:element name="aw:Street" type="xs:string"></xs:element>
+                                                                      <xs:element name="aw:City" type="xs:string"></xs:element>
+                                                                      <xs:element name="aw:State" type="xs:string"></xs:element>
+                                                                      <xs:element name="aw:Zip" type="xs:int"></xs:element>
+                                                                      <xs:element name="aw:Country" type="xs:string"></xs:element>
+                                                                  </xs:sequence>
+                                                           </xs:complexType>
+                                                    </xs:element>
+                                                 <xs:element name="aw:BillingAddress">
+                                                        <xs:complexType>
+                                                               <xs:sequence>
+                                                                      <xs:element name="aw:Name" type="xs:string"></xs:element>
+                                                                      <xs:element name="aw:Street" type="xs:string"></xs:element>
+                                                                      <xs:element name="aw:City" type="xs:string"></xs:element>
+                                                                      <xs:element name="aw:State" type="xs:string"></xs:element>
+                                                                      <xs:element name="aw:Zip" type="xs:int"></xs:element>
+                                                                      <xs:element name="aw:Country" type="xs:string"></xs:element>
+                                                                  </xs:sequence>
+                                                           </xs:complexType>
+                                                    </xs:element>
+                                                 <xs:element name="aw:DeliveryInstructions" type="xs:string"></xs:element>
+                                                 <xs:element name="aw:Item" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                               <xs:sequence>
+                                                                      <xs:element name="aw:ProductID" type="xs:string"></xs:element>
+                                                                      <xs:element name="aw:Qty" type="xs:int"></xs:element>
+                                                                      <xs:element name="aw:Price" type="xs:double"></xs:element>
+                                                                  </xs:sequence>
+                                                               <xs:attribute name="PartNum" type="xs:string"></xs:attribute>
+                                                           </xs:complexType>
+                                                    </xs:element>
+                                             </xs:sequence>
+                                          <xs:attribute name="xmlns:aw" type="xs:string"></xs:attribute>
+                                          <xs:attribute name="PONumber" type="xs:int"></xs:attribute>
+                                          <xs:attribute name="Date" type="xs:date"></xs:attribute>
+                                      </xs:complexType>
+                               </xs:element>
+                        </xs:sequence>
+                     <xs:attribute name="xmlns" type="xs:string"></xs:attribute>
+                 </xs:complexType>
+          </xs:element>
+   </xs:schema>
