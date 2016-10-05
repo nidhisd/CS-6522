@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema targetNamespace="http://www.w3schools.com/RedsDevils"
     elementFormDefault="qualified"
-    xmlns="http://www.w3schools.com/RedsDevils employee.xsd"
+    xmlns="https://raw.githubusercontent.com/nidhisd/CS-6522/master/employee.xsd employee.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
     <xs:element name="employee">
