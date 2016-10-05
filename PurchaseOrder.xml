@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<PurchaseOrders xmlns="www.contoso.com"
+<PurchaseOrders xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xmlns="www.contoso.com"
                 xsi:schemaLocation="https://raw.githubusercontent.com/nidhisd/CS-6522/master/PurchaseOrder.xsd PurchaseOrder.xsd">
   <PurchaseOrder
       PurchaseOrderNumber="99503"
