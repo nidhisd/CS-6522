@@ -92,37 +92,4 @@
       </Item>
     </Items>
   </PurchaseOrder>
-  <aw:ADPurchaseOrder
-    PONumber="11223"
-    Date="2000-01-15"
-    xmlns:aw="http://www.adventure-works.com">
-    <aw:ShippingAddress>
-      <aw:Name>Chris Preston</aw:Name>
-      <aw:Street>123 Main St.</aw:Street>
-      <aw:City>Seattle</aw:City>
-      <aw:State>WA</aw:State>
-      <aw:Zip>98113</aw:Zip>
-      <aw:Country>USA</aw:Country>
-    </aw:ShippingAddress>
-    <aw:BillingAddress>
-      <aw:Name>Chris Preston</aw:Name>
-      <aw:Street>123 Main St.</aw:Street>
-      <aw:City>Seattle</aw:City>
-      <aw:State>WA</aw:State>
-      <aw:Zip>98113</aw:Zip>
-      <aw:Country>USA</aw:Country>
-    </aw:BillingAddress>
-    <aw:DeliveryInstructions>Ship only complete
-order.</aw:DeliveryInstructions>
-    <aw:Item PartNum="LIT-01">
-      <aw:ProductID>Litware Networking Card</aw:ProductID>
-      <aw:Qty>1</aw:Qty>
-      <aw:Price>20.99</aw:Price>
-    </aw:Item>
-    <aw:Item PartNum="LIT-25">
-      <aw:ProductID>Litware 17in LCD Monitor</aw:ProductID>
-      <aw:Qty>1</aw:Qty>
-      <aw:Price>199.99</aw:Price>
-    </aw:Item>
-  </aw:ADPurchaseOrder>
 </PurchaseOrders>
