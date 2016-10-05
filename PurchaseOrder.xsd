@@ -1,46 +1,52 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.adventure-works.com"
-           xmlns="https://raw.githubusercontent.com/nidhisd/CS-6522/master/PurchaseOrder.xsd PurchaseOrder.xsd">
-<xs:element name="ADPurchaseOrder">
-<xs:complexType>
-<xs:sequence>
-<xs:element name="ShippingAddress">
-<xs:complexType>
-<xs:sequence>
-<xs:element type="xs:string" name="Name"/>
-<xs:element type="xs:string" name="Street"/>
-<xs:element type="xs:string" name="City"/>
-<xs:element type="xs:string" name="State"/>
-<xs:element type="xs:int" name="Zip"/>
-<xs:element type="xs:string" name="Country"/>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element name="BillingAddress">
-<xs:complexType>
-<xs:sequence>
-<xs:element type="xs:string" name="Name"/>
-<xs:element type="xs:string" name="Street"/>
-<xs:element type="xs:string" name="City"/>
-<xs:element type="xs:string" name="State"/>
-<xs:element type="xs:int" name="Zip"/>
-<xs:element type="xs:string" name="Country"/>
-</xs:sequence>
-</xs:complexType>
-</xs:element>
-<xs:element type="xs:string" name="DeliveryInstructions"/>
-<xs:element name="Item" maxOccurs="unbounded" minOccurs="0">
-<xs:complexType>
-<xs:sequence>
-<xs:element type="xs:string" name="ProductID"/>
-<xs:element type="xs:byte" name="Qty"/>
-<xs:element type="xs:float" name="Price"/>
-</xs:sequence>
-<xs:attribute type="xs:string" name="PartNum" use="optional"/>
-</xs:complexType>
-</xs:element>
-</xs:sequence>
-<xs:attribute type="xs:short" name="PONumber"/>
-<xs:attribute type="xs:date" name="Date"/>
-</xs:complexType>
-</xs:element>
-</xs:schema>
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://www.contoso.com">
+<xsd:element name="PurchaseOrders">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="PurchaseOrder" maxOccurs="unbounded">
+			<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Address">
+				<xsd:complexType>
+				<xsd:sequence>
+				           <xsd:element name="Name" type="xsd:string"></xsd:element>
+					<xsd:element name="Street" type="xsd:string"></xsd:element>
+					<xsd:element name="City" type="xsd:string"></xsd:element>
+					<xsd:element name="State" type="xsd:string"></xsd:element>
+					<xsd:element name="Zip" type="xsd:int"></xsd:element>
+					<xsd:element name="Country" type="xsd:string"></xsd:element>
+				</xsd:sequence>
+				<xsd:attribute name="Type" type="xsd:string"></xsd:attribute>					
+				</xsd:complexType>
+				<xsd:unique name="Address">
+    				<xsd:selector xpath="Type"/>
+   				<xsd:field xpath="Billing"/>
+   				<xsd:field xpath="shipping"/>
+  				</xsd:unique>
+				</xsd:element>
+				<xsd:element name="DeliveryNotes" type="xsd:string"></xsd:element>
+				<xsd:element name="Items" maxOccurs="unbounded">
+				<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element name="Item">
+					<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="ProductName" type="xsd:string"></xsd:element>
+						<xsd:element name="Quantity" type="xsd:positiveInteger"></xsd:element>
+						<xsd:element name="USPrice" type="xsd:float"></xsd:element>
+					</xsd:sequence>
+					<xsd:attribute name="PartNumber" type="xsd:string"></xsd:attribute>
+					</xsd:complexType>
+					</xsd:element>
+				</xsd:sequence>	
+				</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+			<xsd:attribute name="PurchaseOrderNumber" type="xsd:positiveInteger"></xsd:attribute>
+			<xsd:attribute name="OrderDate" type="xsd:date"></xsd:attribute>
+			</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+</xsd:schema>
