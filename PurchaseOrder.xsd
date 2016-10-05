@@ -1,4 +1,5 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.adventure-works.com">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.adventure-works.com"
+           xmlns="https://raw.githubusercontent.com/nidhisd/CS-6522/master/PurchaseOrder.xsd PurchaseOrder.xsd">
 <xs:element name="ADPurchaseOrder">
 <xs:complexType>
 <xs:sequence>
