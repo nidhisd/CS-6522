@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd1:schema xmlns:xsd1="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.adventure-works.com" xmlns:tns="http://www.adventure-works.com" elementFormDefault="qualified">
+<xsd1:schema xmlns:xsd1="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.adventure-works.com" xmlns:aw="http://www.adventure-works.com" elementFormDefault="qualified">
 <xsd1:element name="ADPurchaseOrder">
 <xsd1:complexType>
 <xsd1:sequence>
