@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd1:schema xmlns:xsd1="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.adventure-works.com" xmlns:tns="http://www.adventure-works.com" elementFormDefault="qualified">
+<xsd1:element name="ADPurchaseOrder">
+<xsd1:complexType>
+<xsd1:sequence>
+	<xsd1:element name="ShippingAddress">
+	<xsd1:complexType>
+	<xsd1:sequence>
+		<xsd1:element name="Name" type="xsd1:string"></xsd1:element>
+		<xsd1:element name="Street" type="xsd1:string"></xsd1:element>
+		<xsd1:element name="City" type="xsd1:string"></xsd1:element>
+		<xsd1:element name="State" type="xsd1:string"></xsd1:element>
+		<xsd1:element name="Zip" type="xsd1:int"></xsd1:element>
+		<xsd1:element name="Country" type="xsd1:string"></xsd1:element>
+	</xsd1:sequence>
+	</xsd1:complexType>
+	</xsd1:element>
+	<xsd1:element name="BillingAddress">
+	<xsd1:complexType>
+	<xsd1:sequence>
+		<xsd1:element name="Name" type="xsd1:string"></xsd1:element>
+		<xsd1:element name="Street" type="xsd1:string"></xsd1:element>
+		<xsd1:element name="City" type="xsd1:string"></xsd1:element>
+		<xsd1:element name="State" type="xsd1:string"></xsd1:element>
+		<xsd1:element name="Zip" type="xsd1:int"></xsd1:element>
+		<xsd1:element name="Country" type="xsd1:string"></xsd1:element>
+	</xsd1:sequence>
+	</xsd1:complexType>
+	</xsd1:element>
+	<xsd1:element name="DeliveryInstructions" type="xsd1:string"></xsd1:element>
+	<xsd1:element name="Item">
+	<xsd1:complexType>
+	<xsd1:sequence>
+	<xsd1:element name="ProductID" type="xsd1:string"></xsd1:element>
+	<xsd1:element name="Qty" type="xsd1:positiveInteger"></xsd1:element>
+	<xsd1:element name="Price" type="xsd1:float"></xsd1:element>
+	</xsd1:sequence>
+	<xsd1:attribute name="PartNum" type="xsd1:string"></xsd1:attribute>
+	</xsd1:complexType>
+	</xsd1:element>
+</xsd1:sequence>
+<xsd1:attribute name="PONumber" type="xsd1:positiveInteger"></xsd1:attribute>
+<xsd1:attribute name="Date" type="xsd1:date"></xsd1:attribute>
+</xsd1:complexType>
+</xsd1:element>
+</xsd1:schema>
