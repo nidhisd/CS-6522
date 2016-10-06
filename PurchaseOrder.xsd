@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://www.contoso.com">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:import namespace="http://www.adventure-works.com" schemaLocation="AdventureWorks.xsd"/>
 <xsd:element name="PurchaseOrders">
 	<xsd:complexType>
 		<xsd:sequence>
@@ -9,15 +10,14 @@
 				<xsd:element name="Address">
 				<xsd:complexType>
 				<xsd:sequence>
-				           <xsd:element name="Name" type="xsd:string"></xsd:element>
+					<xsd:element name="Name" type="xsd:string"></xsd:element>
 					<xsd:element name="Street" type="xsd:string"></xsd:element>
 					<xsd:element name="City" type="xsd:string"></xsd:element>
 					<xsd:element name="State" type="xsd:string"></xsd:element>
 					<xsd:element name="Zip" type="xsd:int"></xsd:element>
 					<xsd:element name="Country" type="xsd:string"></xsd:element>
 				</xsd:sequence>
-				<xsd:attribute name="Type" type="xsd:string"></xsd:attribute>					
-				</xsd:complexType>
+				<xsd:attribute name="Type" type="xsd:string"></xsd:attribute>										</xsd:complexType>
 				<xsd:unique name="Address">
     				<xsd:selector xpath="Type"/>
    				<xsd:field xpath="Billing"/>
