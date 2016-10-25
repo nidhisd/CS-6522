@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<books>
+<book><id>1</id><title>Python Programming: An Introduction to Computer Science</title><authors><author>John Zelle</author><author>Michael Smith</author></authors><price>25</price></book>
+<book><id>2</id><title>Code: The Hidden Language of Computer Hardware and Software</title><authors><author>Charles Petzold</author></authors><price>17</price></book>
+<book><id>3</id><title>How Computers Work</title><authors><author>Ron White</author><author>Timothy Downs</author></authors><price>20</price></book>
+<book><id>4</id><title>Computer Science: An Overview</title><authors><author>Glenn Brookshear</author><author>Dennis Brylow</author></authors><price>101</price></book>
+<book><id>5</id><title>Computer Science Illuminated</title><authors><author>Nell Dale</author><author>John Lewis</author></authors><price>24</price></book>
+<book><id>6</id><title>Microsoft PowerPoint 2013 / 365: Pocket Primer</title><authors><author>Theodor Richardson</author></authors><price>24</price></book>
+<book><id>7</id><title>An Introduction to Information Theory: Symbols, Signals and Noise</title><authors><author>John R. Pierce</author></authors><price>4</price></book>
+<book><id>8</id><title>Computer Vision: Algorithms and Applications</title><authors><author>Richard Szeliski</author></authors><price>24</price></book>
+<book><id>9</id><title>Logic in Computer Science: Modelling and Reasoning about Systems</title><authors><author>Michael Huth</author><author>Mark Ryan</author></authors><price>66</price></book>
+<book><id>10</id><title>Computers and Intractability: A Guide to the Theory of NP-Completeness</title><authors><author>Michael R. Garey</author><author>David S. Johnson</author></authors><price>46</price></book>
+<book><id>11</id><title>Introduction to Communication Science and Systems</title><authors><author>John R. Pierce</author><author>Edward C. Posner</author></authors><price>101</price></book>
+<book><id>12</id><title>Data Structures and Algorithms: Using Python and C++</title><authors><author>David M. Reed</author><author>John Zelle</author></authors><price>101</price></book>
+<book><id>13</id><title>Computer Science Programming Basics in Ruby</title><authors><author>Ophir Frieder</author><author>Gideon Frieder</author><author>David Grossman</author></authors><price>24</price></book>
+<book><id>14</id><title>Mathematical Structures for Computer Science</title><authors><author>Judith L. Gersting</author></authors><price>33</price></book>
+<book><id>15</id><title>Database Systems: The Complete Book</title><authors><author>Hector Garcia-Molina</author><author>Jeffrey D. Ullman</author><author>Jennifer Widom</author></authors><price>124</price></book>
+<book><id>16</id><title>Database Systems: Introduction to Databases and Data Warehouses</title><authors><author>JNenad Jukic</author><author>Susan Vrbsky</author><author>Svetlozar Nestorov</author></authors><price>124</price></book>
+<book><id>17</id><title>The Complete Idiot&apos;s Guide to Creating a Web Page</title><authors><author>Paul McFedries</author></authors><price>14</price></book>
+<book><id>18</id><title>Enterprise JavaBeans</title><authors><author>Richard Monson-Haefel</author></authors><price>31</price></book>
+<book><id>19</id><title>Learning Perl</title><authors><author>Randal L. Schwartz</author></authors><price>24</price></book>
+<book><id>20</id><title>Mastering Windows XP Professional</title><authors><author>Mark Minasi</author></authors><price>27</price></book>
+<book><id>21</id><title>Java &amp; XML:Solutions to Real-World Problems</title><authors><author>Brett McLaughlin</author></authors><price>27</price></book>
+<book><id>22</id><title>Programming C</title><authors><author>Jesse Liberty</author></authors><price>27</price></book>
+<book><id>23</id><title>Hacker&apos;s Challenge</title><authors><author>Mike Schiffman</author></authors><price>20</price></book>
+<book><id>24</id><title>Creating Motion Graphics with After Effects</title><authors><author>Trish Meyer</author></authors><price>42</price></book>
+<book><id>25</id><title>Physics for Game Developers</title><authors><author>David M. Bourg</author></authors><price>27</price></book>
+<book><id>26</id><title>Web Redesign : Workflow That Works</title><authors><author>Kelly Goto</author></authors><price>32</price></book>
+<book><id>27</id><title>Expert Oracle Database 11g Administration</title><authors><author>Sam Alapati</author></authors><price>32</price></book>
+</books>
