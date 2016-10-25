@@ -14,9 +14,9 @@
 <xsl:when test="count(book[title=$input])>0">
 <table border="1">
   <tr>
-		<th bgcolor="green">Title</th>
-		<th bgcolor="green">Author</th>
-		<th bgcolor="green">price</th>
+		<th bgcolor="salmon">Title</th>
+		<th bgcolor="salmon">Author</th>
+		<th bgcolor="salmon">price</th>
 	</tr>
 	<xsl:for-each select="book[title=$input]">
 	<tr>
@@ -52,9 +52,9 @@
     <xsl:when test="count(book[authors/author=$input])>0">
 		<table border="1">
 			<tr>
-			  <th bgcolor="green">Title</th>
-			  <th bgcolor="green">Author</th>
-			  <th bgcolor="green">price</th>
+			  <th bgcolor="salmon">Title</th>
+			  <th bgcolor="salmon">Author</th>
+			  <th bgcolor="salmon">price</th>
 			</tr>
 		<xsl:for-each select="book[authors/author=$input]">
 			<tr>
@@ -90,9 +90,9 @@
 	<xsl:when test="count(book[price=$input])>0">
 	<table border="1">
 			<tr>
-				<th bgcolor="green">Title</th>
-				<th bgcolor="green">Author</th>
-				<th bgcolor="green">price</th>
+				<th bgcolor="salmon">Title</th>
+				<th bgcolor="salmon">Author</th>
+				<th bgcolor="salmon">price</th>
 			</tr>
 		<xsl:for-each select="book[price=$input]">
 			<tr>
