@@ -46,8 +46,7 @@
   
 <!-- IMplementing Search By Author -->
 <xsl:if test="$options='author'">
-	<xsl:choose>
-    <xsl:when test="count(book[authors/author=$input])>0">
+<xsl:if test="count(book[authors/author=$input])>0">
 		<table border="1">
 			<tr>
 			  <th bgcolor="salmon">Title</th>
@@ -75,24 +74,22 @@
 			</tr>
 		</xsl:for-each>
     </table>
-    </xsl:when>
-	<xsl:otherwise>
+    </xsl:if>
+    <xsl:if test="count(book[authors/author=$input])=0">
       <p>Book not found!!!</p>
-	</xsl:otherwise>
-	</xsl:choose>
+    </xsl:if>
 </xsl:if>
 		
 <!-- IMplementing Search By Price -->
 <xsl:if test="$options='price'">
-	<xsl:choose>
-	<xsl:when test="count(book[price=$input])>0">
+<xsl:if test="count(book[price=$input])>0">
 	<table border="1">
 			<tr>
 				<th bgcolor="salmon">Title</th>
 				<th bgcolor="salmon">Author</th>
 				<th bgcolor="salmon">price</th>
 			</tr>
-		<xsl:for-each select="book[price=$input]">
+			<xsl:for-each select="book[price=$input]">
 			<tr>
 				<td>
 				  <xsl:value-of select="title" />
@@ -111,13 +108,12 @@
 					<xsl:value-of select="price"/>
 				</td>
 			</tr>
-		</xsl:for-each>
+			</xsl:for-each>
 	</table>
-	</xsl:when>
-	<xsl:otherwise>
+</xsl:if>
+<xsl:if test="count(book[price=$input])=0">
 	<p>Book not found!!!</p>
-	</xsl:otherwise>
-	</xsl:choose>
+</xsl:if>
 </xsl:if>
 </body>
 </html>
