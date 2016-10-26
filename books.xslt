@@ -10,8 +10,7 @@
 </xsl:if>
 <!-- IMplementing Search By Title -->
 <xsl:if test="$options='title'">
-<xsl:choose>
-<xsl:when test="count(book[title=$input])>0">
+<xsl:if test="count(book[title=$input])>0">
 <table border="1">
   <tr>
 		<th bgcolor="salmon">Title</th>
@@ -39,12 +38,11 @@
 	</tr>
 	</xsl:for-each>
 	</table>
-	</xsl:when>
-		<xsl:otherwise>
-				<p>Book not found!!!</p>
-		</xsl:otherwise>
-	</xsl:choose>
 	</xsl:if>
+	<xsl:if test="count(book[title=$input])<=0">
+		<p>Book not found!!!</p>
+	</xsl:if>
+</xsl:if>
   
 <!-- IMplementing Search By Author -->
 <xsl:if test="$options='author'">
