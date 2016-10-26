@@ -40,7 +40,7 @@
 	</table>
 	</xsl:if>
 	<xsl:if test="count(book[title=$input])=0">
-		<p>Book not found!!!</p>
+	   <p>Book not found!!!</p>
 	</xsl:if>
 </xsl:if>
   
