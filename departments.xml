@@ -1,27 +1,26 @@
 <departments>
-  <department dname="CS">
-    <employee enum=1 >
+  <department dname='CS'>
+    <employee enum="1">
       <ename>Nidhi</ename>
       <addr>Silva</addr>
       <title>SoftwareEngineer</title>
      </employee>
-     <employee enum=2 >
+     <employee enum="2">
       <ename>Moiz</ename>
       <addr>Silva</addr>
       <title>SoftwareEngineerII</title>
      </employee>
   </department>
   <department dname="IT">
-    <employee enum=1 >
+    <employee enum="1">
       <ename>Heena</ename>
       <addr>Silva</addr>
       <title>ITAnalyst</title>
      </employee>
-     <employee enum=2 >
+     <employee enum="2">
       <ename>Zayaan</ename>
       <addr>Silva</addr>
       <title>TeamMember</title>
      </employee>
   </department>
 </departments>
-  
